@@ -29,7 +29,7 @@
   --font-display:'Bricolage Grotesque',system-ui,sans-serif;
   --font-mono:'JetBrains Mono',ui-monospace,monospace;
   --font-editorial:'Fraunces',Georgia,serif;
-  --pad-h:108px;
+  --pad-h:132px;
   --pad-v:80px;
   --r-card:20px;
 }
@@ -142,7 +142,7 @@ html,body{width:100%;height:100%;background:var(--navy-deep);overflow:hidden;fon
    SLIDE 3 — SERVICE AS A SOFTWARE
    ============================================================ */
 .s3-body{flex-direction:row;align-items:stretch;gap:0;}
-.s3-left{flex:1;display:flex;flex-direction:column;justify-content:center;gap:32px;padding-right:100px;}
+.s3-left{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:32px;padding-right:100px;}
 .s3-right{width:520px;flex-shrink:0;display:flex;align-items:center;justify-content:center;position:relative;}
 .s3-headline{font-family:var(--font-editorial);font-style:italic;font-weight:300;font-size:58px;line-height:1.25;color:var(--white);}
 .s3-divider-accent{width:64px;height:3px;background:var(--grad-primary);border-radius:2px;}
@@ -155,12 +155,12 @@ html,body{width:100%;height:100%;background:var(--navy-deep);overflow:hidden;fon
    SLIDE 4 — AI LAST
    ============================================================ */
 .s4-body{flex-direction:row;align-items:center;gap:80px;}
-.s4-text{flex:1;display:flex;flex-direction:column;justify-content:center;gap:28px;}
+.s4-text{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:28px;}
 .s4-headline{font-family:var(--font-display);font-weight:800;font-size:76px;line-height:.98;letter-spacing:-.02em;color:var(--white);margin-bottom:4px;}
 .s4-principle{font-family:var(--font-display);font-size:20px;color:var(--gray-100);line-height:1.62;padding:20px 24px;border-left:3px solid var(--cyan);background:rgba(51,173,229,.04);border-radius:0 10px 10px 0;}
 .s4-principle--purple{border-left-color:var(--purple);background:rgba(168,85,247,.04);}
 .s4-principle--magenta{border-left-color:var(--magenta);background:rgba(232,121,249,.04);}
-.s4-venn{width:480px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.s4-venn{width:440px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
 
 /* ============================================================
    SLIDE 5 — COMO TRABALHAMOS
@@ -187,7 +187,7 @@ html,body{width:100%;height:100%;background:var(--navy-deep);overflow:hidden;fon
    ============================================================ */
 .s6-body{flex-direction:row;align-items:stretch;gap:40px;}
 .s6-intro{display:flex;flex-direction:column;justify-content:center;gap:12px;margin-bottom:0;}
-.s6-col{flex:1;display:flex;flex-direction:column;gap:28px;padding:52px 48px;}
+.s6-col{flex:1;min-width:0;display:flex;flex-direction:column;gap:28px;padding:52px 48px;}
 .s6-icon-wrap{width:80px;height:80px;border-radius:20px;display:flex;align-items:center;justify-content:center;background:rgba(51,173,229,.08);border:1px solid rgba(51,173,229,.20);}
 .s6-icon-wrap--purple{background:rgba(168,85,247,.08);border-color:rgba(168,85,247,.20);}
 .s6-name{font-family:var(--font-display);font-weight:800;font-size:38px;letter-spacing:-.015em;color:var(--white);margin-top:4px;}
@@ -198,7 +198,7 @@ html,body{width:100%;height:100%;background:var(--navy-deep);overflow:hidden;fon
    SLIDE 7 — JEISYS
    ============================================================ */
 .s7-body{flex-direction:row;align-items:stretch;gap:72px;}
-.s7-left{flex:1.15;display:flex;flex-direction:column;justify-content:center;gap:24px;}
+.s7-left{flex:1.15;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:24px;}
 .s7-header{display:flex;align-items:center;gap:20px;margin-bottom:8px;}
 .s7-client{font-family:var(--font-display);font-weight:800;font-size:20px;letter-spacing:.1em;color:var(--white);}
 .s7-subtitle{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gray-300);}
@@ -239,7 +239,7 @@ html,body{width:100%;height:100%;background:var(--navy-deep);overflow:hidden;fon
 .s9-header{margin-bottom:36px;}
 .s9-headline{font-family:var(--font-display);font-weight:800;font-size:52px;line-height:1.05;letter-spacing:-.02em;color:var(--white);}
 .s9-founders{display:flex;gap:48px;flex:1;align-items:stretch;}
-.s9-founder{flex:1;display:flex;flex-direction:column;}
+.s9-founder{flex:1;min-width:0;display:flex;flex-direction:column;}
 .s9-photo-wrap{margin-bottom:28px;}
 .s9-photo{width:148px;height:148px;border-radius:50%;object-fit:cover;object-position:top center;border:2px solid transparent;background:var(--navy) padding-box,var(--grad-primary) border-box;box-shadow:0 0 36px rgba(51,173,229,.14),0 8px 32px rgba(0,0,0,.45);}
 .s9-name{font-family:var(--font-editorial);font-style:italic;font-size:32px;font-weight:400;color:var(--white);margin-bottom:6px;line-height:1.1;}
@@ -301,13 +301,13 @@ html,body{width:100%;height:100%;background:var(--navy-deep);overflow:hidden;fon
         <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
       </filter>
     </defs>
-    <circle cx="140" cy="115" r="98" fill="#33ADE5" fill-opacity="0.11" stroke="#33ADE5" stroke-width="1.5" stroke-opacity="0.65"/>
-    <circle cx="220" cy="115" r="98" fill="#A855F7" fill-opacity="0.11" stroke="#A855F7" stroke-width="1.5" stroke-opacity="0.65"/>
-    <circle cx="180" cy="188" r="98" fill="#e879f9" fill-opacity="0.09" stroke="#e879f9" stroke-width="1.5" stroke-opacity="0.55"/>
-    <text x="90" y="102" text-anchor="middle" font-family="Bricolage Grotesque,system-ui" font-size="13" font-weight="700" fill="#33ADE5">PROCESSOS</text>
-    <text x="270" y="102" text-anchor="middle" font-family="Bricolage Grotesque,system-ui" font-size="13" font-weight="700" fill="#A855F7">PESSOAS</text>
-    <text x="180" y="265" text-anchor="middle" font-family="Bricolage Grotesque,system-ui" font-size="12" font-weight="700" fill="#e879f9">INTELIGÊNCIA ARTIFICIAL</text>
-    <circle cx="180" cy="148" r="32" fill="rgba(255,255,255,0.10)" filter="url(#venn-glow)"/>
+    <circle cx="150" cy="115" r="92" fill="#33ADE5" fill-opacity="0.11" stroke="#33ADE5" stroke-width="1.5" stroke-opacity="0.65"/>
+    <circle cx="210" cy="115" r="92" fill="#A855F7" fill-opacity="0.11" stroke="#A855F7" stroke-width="1.5" stroke-opacity="0.65"/>
+    <circle cx="180" cy="180" r="92" fill="#e879f9" fill-opacity="0.09" stroke="#e879f9" stroke-width="1.5" stroke-opacity="0.55"/>
+    <text x="100" y="100" text-anchor="middle" font-family="Bricolage Grotesque,system-ui" font-size="13" font-weight="700" fill="#33ADE5">PROCESSOS</text>
+    <text x="260" y="100" text-anchor="middle" font-family="Bricolage Grotesque,system-ui" font-size="13" font-weight="700" fill="#A855F7">PESSOAS</text>
+    <text x="180" y="260" text-anchor="middle" font-family="Bricolage Grotesque,system-ui" font-size="12" font-weight="700" fill="#e879f9">INTELIGÊNCIA ARTIFICIAL</text>
+    <circle cx="180" cy="148" r="30" fill="rgba(255,255,255,0.10)" filter="url(#venn-glow)"/>
     <text x="180" y="145" text-anchor="middle" font-family="Bricolage Grotesque,system-ui" font-size="15" font-weight="800" fill="white">ROI</text>
     <text x="180" y="162" text-anchor="middle" font-family="Bricolage Grotesque,system-ui" font-size="9" fill="rgba(255,255,255,0.65)">REAL</text>
   </symbol>
@@ -467,7 +467,7 @@ html,body{width:100%;height:100%;background:var(--navy-deep);overflow:hidden;fon
       </div>
     </div>
     <div class="s4-venn">
-      <svg width="480" height="380" role="img" aria-label="Diagrama Venn: Processos, Pessoas, Inteligência Artificial"><use href="#venn-3" width="480" height="380"/></svg>
+      <svg width="440" height="360" role="img" aria-label="Diagrama Venn: Processos, Pessoas, Inteligência Artificial"><use href="#venn-3" width="440" height="360"/></svg>
     </div>
   </div>
   <footer class="slide-footer">
@@ -766,7 +766,8 @@ html,body{width:100%;height:100%;background:var(--navy-deep);overflow:hidden;fon
   document.getElementById('nav-prev').addEventListener('click',function(){go(cur-1);});
   document.getElementById('nav-next').addEventListener('click',function(){go(cur+1);});
   function fit(){
-    var s=Math.min(window.innerWidth/1920,window.innerHeight/1080);
+    var safe=0.96;
+    var s=Math.min((window.innerWidth*safe)/1920,(window.innerHeight*safe)/1080);
     document.querySelector('.stage__scaler').style.transform='scale('+s+')';
   }
   window.addEventListener('resize',fit);
